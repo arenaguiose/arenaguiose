@@ -104,6 +104,8 @@ a:active {
 	padding-top: 12vh;
 	text-align: center;
 	font-size: 0.9em;
+	font-family: Gilroy-L, Arial;
+
 }
 
 
@@ -120,7 +122,6 @@ a:active {
 }
 
 .project {
-	font-family: Gilroy-L, Arial;
 	margin-bottom: 1.8em;
 	margin-left: auto;
     margin-right: auto;
