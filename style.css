@@ -85,7 +85,7 @@ a:visited {
   color: black;
 }
 
-p a:visited {
+p a:visited, p a:link {
 	color:blue;
 }
 a:hover {
