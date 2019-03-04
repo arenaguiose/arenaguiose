@@ -100,10 +100,14 @@ a:active {
 	font-size: 2.3vw;
 
 }
-#Work {
+#Work, #Resume, #About {
 	padding-top: 12vh;
 	text-align: center;
+	font-size: 0.9em;
 }
+
+
+
 #gallery {
 	margin-top: 30px;
 	display: flex;
@@ -117,7 +121,7 @@ a:active {
 
 .project {
 	font-family: Gilroy-L, Arial;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.8em;
 	margin-left: auto;
     margin-right: auto;
 
@@ -132,7 +136,8 @@ a:active {
 	max-height: 340px;
 	overflow: hidden;
 	background-color: white;
-	margin-bottom: 0.3em;
+	margin-bottom: 0.5em;
+	box-shadow: -1px -1px 8px #f6f6f6;
 
 }
 
@@ -143,6 +148,10 @@ a:active {
 
 .vertical {
 	max-height: 100%;
+}
+
+.fondnoir{
+	background-color: black;
 }
 
 .descrip-pj {
