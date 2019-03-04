@@ -59,6 +59,10 @@ h1, #navigation, h2 {
 	text-transform: uppercase;
 }
 
+#navigation a h2 {
+		color: black;
+}
+
 
 #short h2 {
 	font-family: Gilroy-L, Arial;
@@ -80,6 +84,9 @@ a:visited {
   color: black;
 }
 
+p a:visited {
+	color:blue;
+}
 a:hover {
   text-decoration: underline;
   	text-decoration-color: #FFFF00;
