@@ -57,6 +57,7 @@ h1 {
 h1, #navigation, h2 {
 	font-family: Gilroy-EB, "Arial Black";
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
 #navigation a h2 {
@@ -71,8 +72,6 @@ h1, #navigation, h2 {
 	text-transform: none;
 
 }
-
-
 
 
 a:link {
@@ -116,61 +115,46 @@ a:active {
 
 }
 
-
-
-#gallery {
-	margin-top: 30px;
-	display: flex;
-	flex-wrap: wrap;
-	max-width:1000px;
-	margin-left: auto;
-	margin-right: auto;
-	justify-content: space-between;
-
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10%;
 }
 
-.project {
-	margin-bottom: 1.8em;
-	margin-left: auto;
-    margin-right: auto;
+.item {
+  margin-bottom: 1.7em;
+}
 
+.grid-item {
+  height: 340px;
+  width: 490px;
+  position: relative;
+  margin: 8px;
+  box-shadow: -1px -1px 8px #f6f6f6;
 }
 
 
-
-.img-pj {
-	height: 370px;
-	width: 500px;
-	max-width: 490px;
-	max-height: 340px;
-	overflow: hidden;
-	background-color: white;
-	margin-bottom: 0.5em;
-	box-shadow: -1px -1px 8px #f6f6f6;
-
+.grid-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.img-gal {
-	max-width:100%;
-	min-height: 100%;
-}
-
-.vertical {
-	max-height: 100%;
-}
-
-.fondnoir{
-	background-color: black;
-}
-
-.descrip-pj {
-
+.except img {
+  object-fit: scale-down;
 }
 
 
 
-
-
-
+@media (max-width: 470px) {
+  .grid-item {
+    height: 300px;
+    width: 300px;
+  }
+}
 
 
