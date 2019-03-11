@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" media="screen and (max-device-width: 640px)" href="petite_resolution.css" />
 	<link rel="shortcut icon" type="image/png" href="images/logo-ag.png"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
 </head>
 <body>
 	<div id="page">
@@ -15,9 +17,9 @@
 			<h2>étudiante en web. production de contenu. design. communication.</h2>
 		</div>
 		<ul id="navigation">
-  			<li><a href="#Work" title="Work">Mon Travail</a></li>
-  			<li><a href="#Resume" title="Resume">Mon CV</a></li>
- 			<li><a href="#About" title="About">Me Contacter</a></li>
+  			<li><a title="Work" class="underline--magical js-scrollTo" href="#Work">Mon Travail</a></li>
+  			<li><a title="Resume" class="underline--magical js-scrollTo" href="#Resume">Mon CV</a></li>
+ 			<li><a title="About"  class="underline--magical js-scrollTo" href="#About">Me Contacter</a></li>
 		</ul>
 	</div>
 
@@ -94,6 +96,15 @@
 	</div>
 	
 	
-
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
 </body>
 </html>
