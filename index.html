@@ -1,110 +1,356 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-	<meta charset="utf-8">
-	<title>Aréna Guiose</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" media="screen and (max-device-width: 640px)" href="petite_resolution.css" />
-	<link rel="shortcut icon" type="image/png" href="images/logo-ag.png"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
+  <meta charset="utf-8">
+  <title>Aréna Guiose</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/logo-ag-noi.png" type="image/png">
+ 
+
+
 </head>
+
 <body>
-	<div id="page">
-	<div id="brief">
-		<div id="short">
-			<h1>Aréna Guiose</h1>
-			<h2>étudiante en web. production de contenu. design. communication.</h2>
-		</div>
-		<ul id="navigation">
-  			<li><a title="Work" class="underline--magical js-scrollTo" href="#Work">Mon Travail</a></li>
-  			<li><a title="Resume" class="underline--magical js-scrollTo" href="#Resume">Mon CV</a></li>
- 			<li><a title="About"  class="underline--magical js-scrollTo" href="#About">Me Contacter</a></li>
-		</ul>
-	</div>
+  
 
-	<div id="Work">
-		<h2>Mon Travail</h2>
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-tertiary h3" href="index.php"><img src="images/logo-ag-blc.png" alt="Myself"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-		<div class="container">
-			<div class="item">
-  				<div class="grid-item">
-    				<img src="images/webdesign/mockup-app-rg2.png" />
-  				</div>
-  				<p><b>Roumegoux & Gilles - Application mobile</b></p>
-				<p>Design UX/UI, Prototypage animé</p>
-  			</div>
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.php">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacter">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/arenaguiose/?locale=fr_FR" target="_blank">LinkedIn</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="#">Télécharger mon CV</a>
+        </li>-->
+      </ul>
+    </div>
+  </nav>
+</header>
 
-  			<div class="item">
-  				<div class="grid-item">
-    				<img src="images/photos/IMG_1.JPG"/>
-  				</div>
-  				<p><b>Sélection de photographies personnelles</b></p>
-				<p>Photographie, photographie de portrait</p>
-			</div>
+<!-- hero area -->
+<section class="hero-area bg-primary" id="parallax">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 mx-auto">
+        <h1 class="text-white font-tertiary">Hello ! Je suis<br> Aréna Guiose, <br> Chef de projet web <br>et Data</h1>
+      </div>
+    </div>
+  </div>
+  <div class="layer-bg w-100">
+    <img class="img-fluid w-100" src="images/illustrations/leaf-bg.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l2">
+    <img src="images/illustrations/dots-cyan.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l3">
+    <img src="images/illustrations/leaf-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l4">
+    <img src="images/illustrations/dots-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l5">
+    <img src="images/illustrations/leaf-yellow.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l6">
+    <img src="images/illustrations/leaf-cyan.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l7">
+    <img src="images/illustrations/dots-group-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l8">
+    <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l9">
+    <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape">
+  </div>
+  
+</section>
+<!-- /hero area -->
 
-			<div class="item">
-  				<div class="grid-item">
- 				   <img src="images/com/affiche-selectour-mockup.jpg" />
- 				 </div>
- 				 <p><b>Selectour - Affiche publicitaire</b></p>
-				 <p>Conception, Graphisme</p>
- 			</div>
+<!-- about -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <p class="font-secondary paragraph-lg text-dark">Dynamique et créative, je suis issue d'une formation pluridisciplinaire en web (design, communication, développement, audiovisuel). Je me spécialise cette année dans les enjeux de la donnée dans l'écosystème numérique à travers la LP Développeur Big Data de l'IUT de Bordeaux. J'aime apporter une vision transversale, orientée UX à mes projets, et instaurer du changement en entreprise, comme j'ai l'occasion de la faire en alternance au Conseil départemental de la Dordogne.</p>
+        <!--<a href="about.php" class="btn btn-transparent">Télécharger mon CV</a>-->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
 
- 			<div class="item">
- 				 <div class="grid-item">
- 				   <img src="images/webdesign/ovh-refonte.png" />
- 				 </div>
- 				 <p><b>OVH - Refonte</b></p>
-				 <p>Audit, Design UX</p>
- 			</div>
+<!-- skills -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Compétences</h2>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
+            <div class="wave" data-progress="90%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Développement Web et Expérience utilisateur</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
+            <div class="wave" data-progress="80%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Suite Adobe pour Webdesign</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
+            <div class="wave" data-progress="80%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Open Data et APIs</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
+            <div class="wave" data-progress="40%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Langage R</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /skills -->
+<!-- services -->
 
- 			<div class="item">
- 				 <div class="grid-item except">
- 				   <img src="images/illu/RadisPotter.png" />
- 				 </div>
- 				 <p><b>Série de mascottes rigolotes - Radis Potter</b></p>
-				 <p>Conception, Illustration vectorielle, Illustration bitmap</p>
- 			</div>
-  			
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card hover-shadow shadow">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-palette icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">Conception et développement de sites et applications web</h4>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card active-bg-primary hover-shadow shadow">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-panel icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">Gestion de projet classique et agile</h4>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card hover-shadow shadow">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-vector icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">Data Mining et Analyse Statistique</h4>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /services -->
+<!-- experience -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Expérience</h2>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-1.png" alt="icon">
+        <p class="mb-0">Juin 2018 - Juillet 2019</p>
+        <h4>Designer UX-UI</h4>
+        <h6 class="text-light">TAPAJ France | Bordeaux</h6>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-2.png" alt="icon">
+        <p class="mb-0">Avril 2019 - Juillet 2019</p>
+        <h4>Développeuse Web et Community Manager</h4>
+        <h6 class="text-light">Agence Web Netactions | Cayenne</h6>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-3.png" alt="icon">
+        <p class="mb-0">Septembre 2019 - Maintenant</p>
+        <h4>Chef de projet Open Data</h4>
+        <h6 class="text-light">Conseil Départemental de la Dordogne</h6>
+      </div>
+    </div>
+  </div>
 
-		</div>
+<!-- ./experience -->
+
+<!-- education -->
+<section class="section position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Formation</h2>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2020</p>
+            <h4>Licence Pro Développeur Big Data</h4>
+            <p class="mb-0 text-light">IUT de Bordeaux - Périgueux</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2019</p>
+            <h4>DUT Métiers du Multimédia et d'Internet</h4>
+            <p class="mb-0 text-light">IUT de Bordeaux Montaigne</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2019</p>
+            <h4>Certification OPQUAST Qualité Web</h4>
+            <p class="mb-0 text-light">OPQUAST niveau Avancé</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2016</p>
+            <h4>Bac S Section Européenne Anglais</h4>
+            <p class="mb-0 text-light">Externat Saint Joseph - Cayenne</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bg image -->
+  <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+</section>
+<!-- /education -->
 
 
 
-		
-	</div>
-
-	<div id="Resume">
-		<!-- 
-		<h2>Mon CV</h2>
-	-->
-	<h2>Reste du site en construction</h2>
-	<p><a href="images/CV-ArénaGuiose.pdf" target="_blank">Consultez mon CV ici</a></p>
-	<p>Contactez moi par mail à <a href="mailto:arena.guiose@gmail.com">arena.guiose@gmail.com</a></p>
 
 
-	</div>
+<!-- contact -->
+<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png" id="contacter">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Me contacter</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">aguiosepro@gmail.com</h4>
 
-	<div id="About">
-		<!--<h2>Me Contacter</h2>
-		-->
-	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /contact -->
 
+<!-- footer -->
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">aguiosepro@gmail.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Téléphone</h5>
+          <p class="text-white paragraph-lg font-secondary">+33 6 03 96 16 71</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Situation</h5>
+          <p class="text-white paragraph-lg font-secondary">Bordeaux, Périgueux</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <!--<p class="mb-0 text-light">Copyright ©<script>
+        var CurrentYear = new Date().getFullYear()
+        document.write(CurrentYear)
+      </script> a theme by <a href="https://themefisher.com">themefisher.com</a></p>-->
+  </div>
+</footer>
+<!-- /footer -->
 
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
 
-	</div>
-	
-	
-<script>
-	$(document).ready(function() {
-		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
-			var page = $(this).attr('href'); // Page cible
-			var speed = 750; // Durée de l'animation (en ms)
-			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-			return false;
-		});
-	});
-</script>
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
 </body>
 </html>
