@@ -909,3 +909,21 @@ blockquote {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+
+.fixvit1 {
+  margin-top: 20px !important ;
+  margin-bottom: 40px !important ;
+}
+
+.fixvit2 {
+  margin-bottom: 30px !important;
+}
+
+.section-on-footer {
+    margin-bottom: -170px;
+}
+
+.fixvit3 {
+  padding-bottom: 0px !important;
+}
